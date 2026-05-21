@@ -1,0 +1,42 @@
+{
+    "Trento": {
+        "mm_data_path": [
+            "data/Trento/Trento.mat",
+            "data/Trento/Trento_lidar.mat"
+        ],
+        "gt_path": "data/Trento/Trento_gt.mat",
+        "rgb": [30, 13, 1],
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 45,
+        "n_superpixels": 4000,
+        "lambda_1": 0.1,
+        "lambda_2": 0.1
+    },
+
+    "seed": 42,
+    "dataset_name": "Trento",
+    "gpu_id": "0",
+    "lr": 0.0001,
+    "weight_decay": 1e-5,
+
+    "remove_bkg": true,
+
+    "algorithm": "FedAvg",
+    "num_clients": 2,
+    "local_epochs": 1,
+    "n_epoches": 300,
+    "model_name": "IGAE",
+    "gae_n_enc_1": 128,
+    "gae_n_enc_2": 256,
+    "gae_n_enc_3": 512,
+    "gae_n_dec_1": 512,
+    "gae_n_dec_2": 256,
+    "gae_n_dec_3": 128,
+
+    "save_model": true,
+    "log_path": "./log",
+    "save_path": "./save",
+    "result_path": "./result"
+}
